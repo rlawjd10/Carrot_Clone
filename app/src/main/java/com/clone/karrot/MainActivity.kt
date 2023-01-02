@@ -5,12 +5,12 @@ import android.os.Bundle
 import com.clone.karrot.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_main)
+        setContentView(binding.root)
 
         initBottomNavi()
     }
@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
                 R.id.menu_chat -> {
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.main_frm, CharFragment())
+                        .replace(R.id.main_frm, ChatFragment())
                         .commitAllowingStateLoss()
                     return@setOnItemSelectedListener true;
                 }

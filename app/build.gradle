@@ -6,8 +6,13 @@ plugins {
 android {
     compileSdk 32
 
+
+    viewBinding {
+        enabled = true
+    }
+
     buildFeatures {
-        viewBinding true
+        viewBinding = true
     }
 
     defaultConfig {
@@ -33,9 +38,7 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        viewBinding true
-    }
+
 }
 
 dependencies {
