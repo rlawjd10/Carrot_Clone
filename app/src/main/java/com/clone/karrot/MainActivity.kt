@@ -2,10 +2,63 @@ package com.clone.karrot
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.clone.karrot.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_main)
+
+        initBottomNavi()
+    }
+
+    private fun initBottomNavi() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.main_frm, HomeFragment())
+            .commitAllowingStateLoss()
+
+        binding.mainBnv.setOnItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.menu_home -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.main_frm, HomeFragment())
+                        .commitAllowingStateLoss()
+                    return@setOnItemSelectedListener true;
+                }
+
+                R.id.menu_des -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.main_frm, LifeFragment())
+                        .commitAllowingStateLoss()
+                    return@setOnItemSelectedListener true;
+                }
+
+                R.id.menu_location -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.main_frm, LocationFragment())
+                        .commitAllowingStateLoss()
+                    return@setOnItemSelectedListener true;
+                }
+
+                R.id.menu_chat -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.main_frm, CharFragment())
+                        .commitAllowingStateLoss()
+                    return@setOnItemSelectedListener true;
+                }
+
+                R.id.menu_person -> {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.main_frm, InfoFragment())
+                        .commitAllowingStateLoss()
+                    return@setOnItemSelectedListener true;
+                }
+
+            }
+            false
+        }
     }
 }
