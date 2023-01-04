@@ -22,7 +22,7 @@ class SplashActivity : AppCompatActivity() {
         //handler -> poserDelayed(Runnable, time) method
         Handler(Looper.getMainLooper()).postDelayed({
             //로그인 화면 만들면 mainActivity에서 로그인 Activity로 변경하기
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, OnboardingActivity::class.java)
             startActivity(intent)
             finish()
         }, 3000)

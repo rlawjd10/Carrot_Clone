@@ -28,7 +28,7 @@
         app:itemIconTint="@color/black"
         android:background="@color/white"
         app:labelVisibilityMode="labeled"
-        app:itemIconSize="25dp"
+        app:itemIconSize="23dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
