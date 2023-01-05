@@ -17,5 +17,10 @@ class OnboardingActivity : AppCompatActivity() {
         binding.onboardingStartBtn.setOnClickListener {
             startActivity(Intent(this, SignInActivity::class.java))
         }
+
+        //로그인 하기
+        binding.onboardingLoginTv.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
     }
 }
