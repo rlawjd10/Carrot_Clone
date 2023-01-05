@@ -8,10 +8,10 @@
 
     <ImageView
         android:id="@+id/onboarding_logo_iv"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
 
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="100dp"
 
         android:src="@drawable/logo"
         app:layout_constraintBottom_toTopOf="@id/onboarding_main_tv"
@@ -56,9 +56,10 @@
 
         android:src="@drawable/ic_baseline_language_24"
 
-        android:layout_marginStart="165dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/onboarding_sub_tv"/>
 
     <TextView
@@ -78,18 +79,18 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/onboarding_start_btn"
         android:layout_width="0dp"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
 
         android:background="@drawable/radius"
         android:backgroundTint="@color/carrot"
         android:text="시작하기"
         android:textColor="@color/white"
-        android:textSize="23sp"
+        android:textSize="20sp"
         android:textStyle="bold"
 
-        android:layout_marginEnd="27dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintTop_toBottomOf="@id/onboarding_globe_iv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>

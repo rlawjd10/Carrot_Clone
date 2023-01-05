@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "762474936892",
+    "project_id": "clone-carrot-4b216",
+    "storage_bucket": "clone-carrot-4b216.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762474936892:android:fe929cbc175a23a07aa139",
+        "android_client_info": {
+          "package_name": "com.clone.karrot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762474936892-aoliib0qung0tqb67260g28ac6e2dlbn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.clone.karrot",
+            "certificate_hash": "38e3692ce112968879adc4447bb291f755fa4a35"
+          }
+        },
+        {
+          "client_id": "762474936892-764se291e6au6j9haqtovkf90i73t896.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT9FKR3Gb9IJRLa54l9V_xuXE3dhvFtlM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762474936892-764se291e6au6j9haqtovkf90i73t896.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

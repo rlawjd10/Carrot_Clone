@@ -15,7 +15,9 @@ class MainActivity : AppCompatActivity() {
         initBottomNavi()
     }
 
+    //바텀 네비게이션 when() 활용해서 fragment 연결
     private fun initBottomNavi() {
+        //초기 화면은 homefragment로 설정
         supportFragmentManager.beginTransaction()
             .replace(R.id.main_frm, HomeFragment())
             .commitAllowingStateLoss()
